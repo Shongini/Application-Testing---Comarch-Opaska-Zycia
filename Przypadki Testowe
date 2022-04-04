@@ -7,8 +7,9 @@ Warunki początkowe:
 - Użytkownik posiada wolną pamięć na urządzeniu.
 - Użytkownik jest zalogowany w aplikacji przez konto Google.
 - Użytkownik znajduje się na ekranie aplikacji „Comarch Opaska Życia” w sklep Play.
-Krok: Naciśnij przycisk "Zainstaluj"
+Krok: 1. Naciśnij przycisk "Zainstaluj"
 Oczekiwany Rezultat: Weryfikacja i rozpoczęcie pobierania.
+Priorytet: Wysoki
 Wykonanie: Manualne
 Czas wykonania: 60sekund
 Autor: Dawid Chryc
@@ -22,9 +23,10 @@ Warunki początkowe:
 - Użytkownik posiada wolną pamięć na urządzeniu.
 - Użytkownik jest zalogowany w aplikacji sklep Play przez konto Google.
 - Użytkownik znajduje się na ekranie aplikacji „Comarch Opaska Życia” w sklep Play.
-Krok: Naciśnij przycisk "Zainstaluj"
-      Naciśnij przycisk: "Anuluj"
+Krok: 1. Naciśnij przycisk "Zainstaluj"
+      2. Naciśnij przycisk: "Anuluj"
 Oczekiwany Rezultat: Brak rozpoczęcia pobierania i powrót do widoku aplikacji w sklep Play.
+Priorytet: Niski
 Wykonanie: Manualne
 Czas wykonania: 45sekund
 Autor: Dawid Chryc
@@ -37,3 +39,138 @@ Cel: Weryfikacja możliwości instalacji aplikacji z brakiem wolnej pamięci na 
 Warunki początkowe: 
 - Użytkownik jest zalogowany w aplikacji sklep Play przez konto Google.
 - Użytkownik znajduje się na ekranie aplikacji „Comarch Opaska Życia” w sklep Play.
+Krok: 1. Naciśnij przycisk "Zainstaluj"
+      2. Naciśnij przycisk: "OK"
+Oczekiwany Rezultat: Komunikat o braku dostępnej pamięci i powrót do widoku aplikacji w sklep Play.
+Priorytet: Niski
+Wykonanie: Manualne
+Czas wykonania: 45sekund
+Autor: Dawid Chryc
+
+
+#Rejestracja
+Przypadek testowy ID: REJ_1
+Użytkownik: user
+Tytuł: Tworzenie konta na platformie „COMARCH OPASKA ŻYCIA” z poprawnymi danymi.
+Cel: Utworzenie konta w bazie danych aplikacji.
+Warunki początkowe: 
+- Użytkownik posiada zainstalowaną aplikację „COMARCH OPASKA ŻYCIA” na urządzeniu.
+- Użytkownik znajduje się na ekranie tworzenia konta w aplikacji „Comarch Opaska Życia”.
+Krok: 1. Podaj imię, nazwisko i adres mailowy
+      2. Naciśnij przycisk: "Dalej"
+      3. Ustal nowe hasło i potwierdź je
+      4. Potwierdzenie akceptacji regulaminu
+Oczekiwany Rezultat: Akceptacja wprowadzonych danych i zakończenie rejestracji sukcesem.
+Priorytet: Wysoki
+Dane testowe: Adres email - user987@gmail.com
+              Hasło - user321
+              Imie - user
+              Nazwisko - resu
+Wykonanie: Manualne
+Czas wykonania: 90sekund
+Autor: Dawid Chryc
+
+
+Przypadek testowy ID: REJ_2
+Użytkownik: user
+Tytuł: Tworzenie konta na platformie „COMARCH OPASKA ŻYCIA” z niepoprawnym adresem email.
+Cel: Weryfikacja możliwości utworzenie konta w bazie danych aplikacji z niepoprawnym adresem email.
+Warunki początkowe: 
+- Użytkownik posiada zainstalowaną aplikację „COMARCH OPASKA ŻYCIA” na urządzeniu.
+- Użytkownik znajduje się na ekranie tworzenia konta w aplikacji „Comarch Opaska Życia”.
+Krok: 1. Podaj imię, nazwisko i adres mailowy
+Oczekiwany Rezultat: Wyświetlenie błędu komunikatem "Wpisz e-mail według schematu 'example@email.com'".
+Priorytet: Wysoki
+Dane testowe: Adres email - user987@gmail.com
+              Hasło - user321
+              Imie - user
+              Nazwisko - resu
+Wykonanie: Manualne
+Czas wykonania: 30sekund
+Autor: Dawid Chryc
+
+
+Przypadek testowy ID: REJ_3
+Użytkownik: user
+Tytuł: Tworzenie konta na platformie „COMARCH OPASKA ŻYCIA” z niepoprawnym hasłem.
+Cel: Weryfikacja możliwości utworzenie konta w bazie danych aplikacji z niepoprawnym hasłem.
+Warunki początkowe: 
+- Użytkownik posiada zainstalowaną aplikację „COMARCH OPASKA ŻYCIA” na urządzeniu.
+- Użytkownik znajduje się na ekranie tworzenia konta w aplikacji „Comarch Opaska Życia”.
+Krok: 1. Podaj imię, nazwisko i adres mailowy
+      2. Naciśnij przycisk "Dalej"
+      3. Ustal nowe hasło i potwierdź je
+Oczekiwany Rezultat: Wyświetlenie błędu komunikatem "Hasło nie spełnia wymagań" i/lub "Wprowadzone hasło różni się od poprzedniego".
+Priorytet: Wysoki
+Dane testowe: Adres email - user987@gmail.com
+              Hasło - user321
+              Imie - user
+              Nazwisko - resu
+Wykonanie: Manualne
+Czas wykonania: 60sekund
+Autor: Dawid Chryc
+
+
+#Logowanie
+Przypadek testowy ID: LOG_1
+Użytkownik: user
+Tytuł: Logowanie na platformie „COMARCH OPASKA ŻYCIA” z poprawnym adresem mailowym i hasłem oraz kodem pinem.
+Cel: Zalogowanie w aplikacji.
+Warunki początkowe: 
+- Użytkownik posiada zainstalowaną aplikację „COMARCH OPASKA ŻYCIA” na urządzeniu.
+- Użytkownik znajduje się na ekranie logowania w aplikacji „Comarch Opaska Życia” po raz pierwszy.
+Krok: 1. Podaj adres mailowy i hasło
+      2. Naciśnij przycisk "Zaloguj się"
+      3. Ustal nowy kod pin/Podaj kod pin
+      4. Naciśnij przycisk "OK"
+Oczekiwany Rezultat: Akceptacja wprowadzonych danych, logowanie zakończone sukcesem.
+Priorytet: Wysoki
+Dane testowe: Adres email - user987@gmail.com
+              Hasło - user321
+              Imie - user
+              Nazwisko - resu
+Wykonanie: Manualne
+Czas wykonania: 60sekund
+Autor: Dawid Chryc
+
+
+Przypadek testowy ID: LOG_2
+Użytkownik: user
+Tytuł: Logowanie na platformie „COMARCH OPASKA ŻYCIA” z poprawnym adresem mailowym, hasłem i niepoprawnym kodem pin.
+Cel: Weryfikacja możliwości zalogowania w aplikacji z poprawnym adresem mailowym, hasłem i niepoprawnym kodem pin.
+Warunki początkowe: 
+- Użytkownik posiada zainstalowaną aplikację „COMARCH OPASKA ŻYCIA” na urządzeniu.
+- Użytkownik znajduje się na ekranie logowania w aplikacji „Comarch Opaska Życia”.
+Krok: 1. Podaj adres mailowy i hasło
+      2. Naciśnij przycisk "Zaloguj się"
+      3. Podaj kod pin
+      4. Naciśnij przycisk "OK"
+Oczekiwany Rezultat: Wyświetlenie błędu komunikatem "Błędny kod dostępu, spróbuj ponownie".
+Priorytet: Wysoki
+Dane testowe: Adres email - user987@gmail.com
+              Hasło - user321
+              Imie - user
+              Nazwisko - resu
+Wykonanie: Manualne
+Czas wykonania: 60sekund
+Autor: Dawid Chryc
+
+
+Przypadek testowy ID: LOG_3
+Użytkownik: user
+Tytuł: Logowanie na platformie „COMARCH OPASKA ŻYCIA” z niepoprawnym adresem mailowym i/lub hasłem.
+Cel: Weryfikacja możliwości zalogowania w aplikacji z niepoprawnym adresem mailowym i/lub hasłem.
+Warunki początkowe: 
+- Użytkownik posiada zainstalowaną aplikację „COMARCH OPASKA ŻYCIA” na urządzeniu.
+- Użytkownik znajduje się na ekranie logowania w aplikacji „Comarch Opaska Życia”.
+Krok: 1. Podaj adres mailowy i hasło
+      2. Naciśnij przycisk "Zaloguj się"
+Oczekiwany Rezultat: Wyświetlenie błędu komunikatem "E-mail lub hasło są niepoprawne" lub "Wpisz e-mail według schematu 'example@email.com'".
+Priorytet: Wysoki
+Dane testowe: Adres email - user987@gmail.com
+              Hasło - user321
+              Imie - user
+              Nazwisko - resu
+Wykonanie: Manualne
+Czas wykonania: 45sekund
+Autor: Dawid Chryc
