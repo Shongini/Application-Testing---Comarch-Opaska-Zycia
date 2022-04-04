@@ -9,3 +9,23 @@ Testowane elementy: 		Logowanie do aplikacji na urządzeniu
 Opis: 	Przetestowanie aplikacji pod kątem możliwości zalogowania z użyciem odpowiednich danych.
 Wersja: 1.0
 
+1. 
+Cel testu: 	Logowanie z użyciem poprawnych danych
+Stan początkowy: 	Ekran logowania w aplikacji: „COMARCH OPASKA ŻYCIA”
+Akcja:	1. Podanie adresu e-mail
+	2. Podanie hasła
+	3. Podanie kodu Pin
+Oczekiwana wartość: 	Wyświetlenie okna menu aplikacji.
+Wartość testowa: 	Ukazanie okna menu.
+Status/Ocena testu:	Logowanie zakończone sukcesem.
+
+2.
+Cel testu: 	Logowanie z użyciem niepoprawnego adresu e-mail i/lub hasła
+Stan początkowy: 	Ekran logowania w aplikacji: „COMARCH OPASKA ŻYCIA”
+Akcja:	1. Podanie niepoprawnego adresu e-mail i/lub niepoprawnego hasła
+Oczekiwana wartość: 	Wyświetlenie błędu.
+Wartość testowa: 	Ukazanie komunikatu: „E-mail lub hasło są nieprawidłowe”.
+Status/Ocena testu: 	Aplikacja zareagowała prawidłowo.
+
+
+
