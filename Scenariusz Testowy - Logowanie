@@ -28,4 +28,12 @@ Wartość testowa: 	Ukazanie komunikatu: „E-mail lub hasło są nieprawidłowe
 Status/Ocena testu: 	Aplikacja zareagowała prawidłowo.
 
 
+3.
+Cel testu: 	Logowanie z użyciem niepoprawnego kodu Pin
+Stan początkowy: 	Ekran podania kodu dostępu Pin
+Akcja: 	1. Podanie niepoprawnego kodu Pin
+Oczekiwana wartość: 	Wyświetlenie błędu
+Wartość testowa: 	Ukazanie komunikatu: „Kod dostępu jest nieprawidłowy, spróbuj ponownie”.
+Status/Ocena testu: 	Aplikacja zareagowała prawidłowo.
+
 
