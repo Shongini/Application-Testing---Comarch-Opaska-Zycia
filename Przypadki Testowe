@@ -127,8 +127,7 @@ Oczekiwany Rezultat: Akceptacja wprowadzonych danych, logowanie zakończone sukc
 Priorytet: Wysoki
 Dane testowe: Adres email - user987@gmail.com
               Hasło - user321
-              Imie - user
-              Nazwisko - resu
+              Kod pin - 2580
 Wykonanie: Manualne
 Czas wykonania: 60sekund
 Autor: Dawid Chryc
@@ -149,8 +148,7 @@ Oczekiwany Rezultat: Wyświetlenie błędu komunikatem "Błędny kod dostępu, s
 Priorytet: Wysoki
 Dane testowe: Adres email - user987@gmail.com
               Hasło - user321
-              Imie - user
-              Nazwisko - resu
+              Kod pin - 2580
 Wykonanie: Manualne
 Czas wykonania: 60sekund
 Autor: Dawid Chryc
@@ -169,8 +167,6 @@ Oczekiwany Rezultat: Wyświetlenie błędu komunikatem "E-mail lub hasło są ni
 Priorytet: Wysoki
 Dane testowe: Adres email - user987@gmail.com
               Hasło - user321
-              Imie - user
-              Nazwisko - resu
 Wykonanie: Manualne
 Czas wykonania: 45sekund
 Autor: Dawid Chryc
