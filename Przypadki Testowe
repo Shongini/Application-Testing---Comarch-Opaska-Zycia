@@ -1,0 +1,39 @@
+# Pobieranie
+Przypadek testowy ID: COZ_1
+Użytkownik: user
+Tytuł: Pobranie aplikacji „COMARCH OPASKA ŻYCIA” z dostępem do Internetu.
+Cel: Zainstalowanie aplikacji w urządzeniu.
+Warunki początkowe: 
+- Użytkownik posiada wolną pamięć na urządzeniu.
+- Użytkownik jest zalogowany w aplikacji przez konto Google.
+- Użytkownik znajduje się na ekranie aplikacji „Comarch Opaska Życia” w sklep Play.
+Krok: Naciśnij przycisk "Zainstaluj"
+Oczekiwany Rezultat: Weryfikacja i rozpoczęcie pobierania.
+Wykonanie: Manualne
+Czas wykonania: 60sekund
+Autor: Dawid Chryc
+
+
+Przypadek testowy ID: COZ_2
+Użytkownik: user
+Tytuł: Pobranie aplikacji „COMARCH OPASKA ŻYCIA” bez dostępu do internetu.
+Cel: Weryfikacja możliwości instalacji aplikacji bez dostępu do Internetu.
+Warunki początkowe: 
+- Użytkownik posiada wolną pamięć na urządzeniu.
+- Użytkownik jest zalogowany w aplikacji sklep Play przez konto Google.
+- Użytkownik znajduje się na ekranie aplikacji „Comarch Opaska Życia” w sklep Play.
+Krok: Naciśnij przycisk "Zainstaluj"
+      Naciśnij przycisk: "Anuluj"
+Oczekiwany Rezultat: Brak rozpoczęcia pobierania i powrót do widoku aplikacji w sklep Play.
+Wykonanie: Manualne
+Czas wykonania: 45sekund
+Autor: Dawid Chryc
+
+
+Przypadek testowy ID: COZ_3
+Użytkownik: user
+Tytuł: Pobranie aplikacji „COMARCH OPASKA ŻYCIA” bez dostępnej wolnej pamięci.
+Cel: Weryfikacja możliwości instalacji aplikacji z brakiem wolnej pamięci na urządzeniu.
+Warunki początkowe: 
+- Użytkownik jest zalogowany w aplikacji sklep Play przez konto Google.
+- Użytkownik znajduje się na ekranie aplikacji „Comarch Opaska Życia” w sklep Play.
