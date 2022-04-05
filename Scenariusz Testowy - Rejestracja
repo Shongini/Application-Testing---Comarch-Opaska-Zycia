@@ -69,3 +69,17 @@ Akcja:
 Oczekiwana wartość:                   Brak akceptacji określonej formy hasła
 Wartość testu:                        Wyświetlenie komunikatu: "Hasło niespełnia wymagań" i/lub "Wprowadzone hasło róźni się od poprzedniego".
 Status/Ocena:                         Sukces
+
+
+6.
+Cel testu:                            Rejestracja z użyciem niepoprawnego hasła - Przypadek negatywny
+Stan początkowy:                      Ekran zakładania konta w aplikacji
+Akcja:                                
+                                      1.  Podaj imię, nazwisko i adres mailowy
+                                      2.  Naciśnij przycisk "Dalej"
+                                      3.  Ustal nowe hasło i potwierdź je
+                                      
+Oczekiwana wartość:                   Zaakceptowanie formy hasła
+Wartość testu:                        Wyświetlenie komunikatu: "Hasło niespełnia wymagań" i/lub "Wprowadzone hasło róźni się od poprzedniego".
+Status/Ocena:                         Porażka
+
