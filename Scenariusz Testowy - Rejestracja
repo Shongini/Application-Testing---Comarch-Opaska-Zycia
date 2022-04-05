@@ -1,0 +1,22 @@
+Scenariusz testowy (Rejestracja) - Aplikacja "COMARCH OPASKA ŻYCIA"
+Firma:                             Comarch
+Nr dokumentu:                      1
+Nazwa projektu:                    Testowanie aplikacji Fitness
+Zadanie:                           Przetestowanie aplikacji mobilnej: "COMARCH OPASKA ŻYCIA"
+Osoba wykonująca test:             Dawid Chryc
+
+Testowane elementy:                Rejestracja w aplikacji na urządzeniu
+Opis:                              Przetestowanie aplikacji pod kątem możliwości założenia konta.
+Wersja:                            1.0
+
+1.
+Cel testu:                            Rejestracja z użyciem poprawnych danych
+Stan początkowy:                      Ekran zakładania konta w aplikacji
+Akcja:                                
+                                      1.  Podaj imię, nazwisko i adres mailowy
+                                      2.  Naciśnij przycisk "Dalej"
+                                      3.  Ustal nowe hasło i potwierdź je
+                                      4.  Potwierdź regulamin
+Oczekiwana wartość:                   Akceptacja wprowadzonych danych
+Wartość testu:                        Rejestracja zakończona pomyślnice
+Status/Ocena:                         Sukces
