@@ -5,7 +5,9 @@ Nazwa projektu:                    Testowanie aplikacji Fitness
 Zadanie:                           Przetestowanie aplikacji mobilnej: "COMARCH OPASKA ŻYCIA"
 Osoba wykonująca test:             Dawid Chryc
 
-
+Testowane elementy:                Rejestracja w aplikacji na urządzeniu
+Opis:                              Przetestowanie aplikacji pod kątem możliwości założenia konta.
+Wersja:                            1.0
 
 
 1.
