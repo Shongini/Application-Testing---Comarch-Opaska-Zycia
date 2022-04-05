@@ -9,6 +9,7 @@ Testowane elementy:                Rejestracja w aplikacji na urządzeniu
 Opis:                              Przetestowanie aplikacji pod kątem możliwości założenia konta.
 Wersja:                            1.0
 
+
 1.
 Cel testu:                            Rejestracja z użyciem poprawnych danych - Przypadek pozytywny
 Stan początkowy:                      Ekran zakładania konta w aplikacji
@@ -17,10 +18,10 @@ Akcja:
                                       2.  Naciśnij przycisk "Dalej"
                                       3.  Ustal nowe hasło i potwierdź je
                                       4.  Potwierdź regulamin
+                                      
 Oczekiwana wartość:                   Akceptacja wprowadzonych danych
 Wartość testu:                        Rejestracja zakończona pomyślnie
 Status/Ocena:                         Sukces
-
 
 2.
 Cel testu:                            Rejestracja z użyciem poprawnych danych - Przypadek negatywny
@@ -30,6 +31,7 @@ Akcja:
                                       2.  Naciśnij przycisk "Dalej"
                                       3.  Ustal nowe hasło i potwierdź je
                                       4.  Potwierdź regulamin
+                                      
 Oczekiwana wartość:                   Niezaakceptowanie wprowadzonych danych
 Wartość testu:                        Rejestracja zakończona pomyślnie
 Status/Ocena:                         Porażka
@@ -40,7 +42,29 @@ Cel testu:                            Rejestracja z użyciem niepoprawnego adres
 Stan początkowy:                      Ekran zakładania konta w aplikacji
 Akcja:                                
                                       1.  Podaj imię, nazwisko i adres mailowy
+                                      
 Oczekiwana wartość:                   Wystąpienie błędu
 Wartość testu:                        Wyświetlenie komunikatu: "Wpisz e-mail według schematu example@email.com"
 Status/Ocena:                         Sukces
+
+4.
+Cel testu:                            Rejestracja z użyciem niepoprawnego adresu e-mail - Przypadek negatywny
+Stan początkowy:                      Ekran zakładania konta w aplikacji
+Akcja:                                
+                                      1.  Podaj imię, nazwisko i adres mailowy
+                                      
+Oczekiwana wartość:                   Zaakceptowanie wprowadzonych danych
+Wartość testu:                        Wyświetlenie komunikatu: "Wpisz e-mail według schematu example@email.com"
+Status/Ocena:                         Porażka
+
+
+5.
+Cel testu:                            Rejestracja z użyciem niepoprawnego hasła - Przypadek pozytywny
+Stan początkowy:                      Ekran zakładania konta w aplikacji
+Akcja:                                
+                                      1.  Podaj imię, nazwisko i adres mailowy
+                                      
+Oczekiwana wartość:                   Zaakceptowanie wprowadzonych danych
+Wartość testu:                        Wyświetlenie komunikatu: "Wpisz e-mail według schematu example@email.com"
+Status/Ocena:                         Porażka
 
