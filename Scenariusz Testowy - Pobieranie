@@ -15,20 +15,41 @@ Stan początkowy: 	Ekran szczegołówych informacji o aplikacji: „COMARCH OPAS
 
 Akcja:			1. Naciśnij przycisk "Zainstaluj"
 
-Oczekiwana wartość: 	Wyświetlenie okna menu aplikacji.
-Wartość testowa: 	Ukazanie okna menu.
-Status/Ocena testu:	Logowanie zakończone sukcesem.
+Oczekiwana wartość: 	Instalacja aplikacji na urządzeniu.
+Wartość testowa: 	Weryfikacja i rozpoczęcie pobierania.
+Status/Ocena testu:	Sukces
 
-2.
-Cel testu: 		Logowanie z użyciem niepoprawnego adresu e-mail i/lub hasła
-Stan początkowy: 	Ekran logowania w aplikacji: „COMARCH OPASKA ŻYCIA”
+2. 
+Cel testu: 		Pobranie aplikacji z dostępem do internetu. - Przypadek negatywny
+Stan początkowy: 	Ekran szczegołówych informacji o aplikacji: „COMARCH OPASKA ŻYCIA” w sklep Play
 
-Akcja:			1. Podanie niepoprawnego adresu e-mail i/lub niepoprawnego hasła
+Akcja:			1. Naciśnij przycisk "Zainstaluj"
 
-Oczekiwana wartość: 	Wyświetlenie błędu.
-Wartość testowa: 	Ukazanie komunikatu: „E-mail lub hasło są nieprawidłowe”.
-Status/Ocena testu: 	Aplikacja zareagowała prawidłowo.
+Oczekiwana wartość: 	Brak rozpoczęcia pobierania.
+Wartość testowa: 	Weryfikacja i rozpoczęcie pobierania.
+Status/Ocena testu:	Porażka
 
+
+3.
+Cel testu: 		Pobieranie aplikacji bez dostępu do internetu. - Przypadek pozytywny
+Stan początkowy: 	Ekran szczegołówych informacji o aplikacji: „COMARCH OPASKA ŻYCIA” w sklep Play
+
+Akcja:			1. Naciśnij przycisk "Zainstaluj"
+
+Oczekiwana wartość: 	Brak rozpoczęcia pobierania.
+Wartość testowa: 	Wyświetlenie komunikatu o braku dostępu do internetu.
+Status/Ocena testu: 	Sukces
+
+
+4.
+Cel testu: 		Pobieranie aplikacji bez dostępu do internetu. - Przypadek negatywny
+Stan początkowy: 	Ekran szczegołówych informacji o aplikacji: „COMARCH OPASKA ŻYCIA” w sklep Play
+
+Akcja:			1. Naciśnij przycisk "Zainstaluj"
+
+Oczekiwana wartość: 	Brak rozpoczęcia pobierania.
+Wartość testowa: 	Wyświetlenie komunikatu o braku dostępu do internetu.
+Status/Ocena testu: 	Sukces
 
 3.
 Cel testu: 	Logowanie z użyciem niepoprawnego kodu Pin
