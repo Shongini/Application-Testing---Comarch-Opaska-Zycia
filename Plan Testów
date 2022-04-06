@@ -1,3 +1,28 @@
+Nazwa projektu: Testowanie aplikacji mobilnej: "COMARCH OPASKA ŻYCIA"
+	Imię i nazwisko autora: Dawid Chryc
+	Wersja: 1.0
+	
+	I. WSTĘP
+	Projekt polega na przetestowaniu strony internetowej o adresie: http://automationpractice.com/index.php
+	Celem projektu jest zidentyfikowanie błędów mogących wpłynąć na decyzję potencjalnego klienta o dokonaniu zakupu w sklepie internetowym.
+	Materiały, które dostarczy testowanie przekazane zostaną deweloperow celem wprowadzenia poprawek. W drugiej kolejności przeprowadzone zostaną testy regresyjne. 
+	
+	II. OPIS
+	
+	1. Obiekt
+	http://automationpractice.com/index.php
+	
+	2. Lista rzeczy do przetestowania
+	- zakładanie konta,
+	- logowanie do konta,
+	- odzyskiwanie hasła,
+	- dodawanie produktu do koszyka,
+	- zakup,
+	- dodawanie produktu do listy ulubionych,
+	- sortowanie i filtorwanie prouktów,
+	- wyszukiwanie produktów.
+
+
 
 	
 	3. Lista rzeczy których nie należy testować
