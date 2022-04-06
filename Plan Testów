@@ -13,18 +13,10 @@ Nazwa projektu: Testowanie aplikacji mobilnej: "COMARCH OPASKA ŻYCIA"
 	Aplikacja: "Comarch Opaska Życia"
 	
 	2. Lista rzeczy do przetestowania
+	- pobieranie aplikacji z Sklep Play/AppStore,
 	- zakładanie konta,
-	- logowanie do konta,
-	- odzyskiwanie hasła,
-	- dodawanie produktu do koszyka,
-	- zakup,
-	- dodawanie produktu do listy ulubionych,
-	- sortowanie i filtorwanie prouktów,
-	- wyszukiwanie produktów.
+	- logowanie.
 
-
-
-	
 	3. Lista rzeczy których nie należy testować
 	- zabezpieczenia,
 	- kod źródłowy.
