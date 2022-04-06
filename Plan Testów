@@ -31,7 +31,7 @@ Nazwa projektu: Testowanie aplikacji mobilnej: "COMARCH OPASKA ŻYCIA"
 	Tytuł powinien zostać skonstruowany jak poniżej:
 	[Urządzenie][Obszar] - Opis błędu
 	Przykład: 
-	        [Android][Konto] - Można utworzyć nowy adres e-mail
+	        [Android][Konto] - Nie można utworzyć konta z wykorzystaniem podanego adresu e-mail.
 	        
 	III. Zarządzanie projektem testerskim
 	
