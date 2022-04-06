@@ -10,66 +10,52 @@ Nazwa projektu: Testowanie aplikacji mobilnej: "COMARCH OPASKA ŻYCIA"
 	II. OPIS
 	
 	1. Obiekt
-	http://automationpractice.com/index.php
+	Aplikacja - "COMARCH OPASKA ŻYCIA"
 	
 	2. Lista rzeczy do przetestowania
+	- pobieranie aplikacji z Sklep Play/AppStore,
 	- zakładanie konta,
-	- logowanie do konta,
-	- odzyskiwanie hasła,
-	- dodawanie produktu do koszyka,
-	- zakup,
-	- dodawanie produktu do listy ulubionych,
-	- sortowanie i filtorwanie prouktów,
-	- wyszukiwanie produktów.
+	- logowanie,
 	
 	3. Lista rzeczy których nie należy testować
-	- wszystko co znajduje się w stopce strony,
 	- zabezpieczenia,
 	- kod źródłowy.
 	
 	4. Wymagania systemowe
 	OS
-	  - Windows 7 i wyższy
 	  - Android 8 i wyższy
-	Przeglądarka
-	  - Chrome
-	  - Firefox
-	
+	  - iOS 13 i wyższy
+	  
 	5. System śledzenia błędów
-	Błędy należy zgłaszać poprzez Issues. 
+	Błędy należy zgłaszać poprzez .... 
 	Tytuł powinien zostać skonstruowany jak poniżej:
-	[Urządzenie(Przeglądarka)][Obszar] - Opis błędu
+	[Urządzenie][Obszar] - Opis błędu
 	Przykład: 
-	        [Windows 7(Chrome)][Konto] - Można utworzyć nowe konto używając na e-mail dla którego już istnieje konto
+	        [Android][Konto] - Można utworzyć nowy adres e-mail
 	        
 	III. Zarządzanie projektem testerskim
 	
 	1. Zespół i zadania
-	Maria Kowalska - tester,
-	Tomasz Kwiatek - tester,
-	Anna Mrowczyk - tester,
-	Mariusz Noga - deweloper,
-	Katarzyna Kwik - lider projektu.
+	Dawid Chryc - Tester
+	----------- - Deweloper
 	
 	2. Harmonogram testów
-	Rozpoczęcie testów 04.01.2021
-	Zakończenie testów 15.01.2021
-	Prace deweloperskie 18-29.01.2021
-	Testy regresyjne 1-5.02.2021
+	Rozpoczęcie testów 01.04.2022
+	Zakończenie testów 03.04.2022
+	Prace deweloperskie --.04.2022
+	Testy regresyjne --.04.2022
 	
 	3. Środowisko testów
-	Windows 7 (Chrome)
-	Windows 10 (Firefox)
-	Android 9.0 (Chrome)
+	Android 12
+	iOS 15
 	
 	4. Narzędzia testowe
 	- program do robienia zrzutów ekranu,
 	- program do nagrywania działań na ekranie,
-	- githube.com,
-	- Selenium IDE.
+	- github.com,
 	
 	5. Kryteria zakończenia testów
-	Termin zakończenia 15.01.2021 lub osiągnięcie limitu błędów - 100.  
+	Termin zakończenia 04.04.2022 lub osiągnięcie limitu błędów - 100.  
 	
 	6. Defekty
 	Rodzaje defektów: funkcjonalne, wizualne, kontekstowe, wydajnościowe.
@@ -81,7 +67,8 @@ Nazwa projektu: Testowanie aplikacji mobilnej: "COMARCH OPASKA ŻYCIA"
 	      niski (kosmetyczne błędy).
 	      
 	7. Śledzenie statusu błędów i raportowanie
-	Raportowanie błędów odbywać się będzie na platformie https://github.com/anmro/Anna-Mrowczyk/issues,
+	Raportowanie błędów odbywać się będzie na platformie https://github.com/Shongini,
 	
 	8. Ryzyko
-	Potencjalna zbyt duża ilość błędów i za krótki czas na ich zgłoszenie. W dalszej kolejności mało czasu na naprawę defektów. 
+	Potencjalna zbyt duża ilość błędów.
+	Możliwie krótki czas na ich zgłoszenie wraz z krótkim czasem na ich naprawę przez zespół deweloperów.
