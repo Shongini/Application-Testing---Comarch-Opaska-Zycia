@@ -47,15 +47,28 @@ Stan początkowy: 	Ekran szczegołówych informacji o aplikacji: „COMARCH OPAS
 
 Akcja:			1. Naciśnij przycisk "Zainstaluj"
 
-Oczekiwana wartość: 	Brak rozpoczęcia pobierania.
+Oczekiwana wartość: 	Weryfikacja poprawna i rozpoczęcie pobierania aplikacji.
 Wartość testowa: 	Wyświetlenie komunikatu o braku dostępu do internetu.
+Status/Ocena testu: 	Porażka
+
+
+5.
+Cel testu: 	Pobieranie aplikacji bez dostępnej wolnej pamięci masowej. - Przypadek pozytywny
+Stan początkowy: 	Ekran szczegołówych informacji o aplikacji: „COMARCH OPASKA ŻYCIA” w sklep Play
+
+Akcja: 	1. Naciśnij przycisk "Zainstaluj"
+
+Oczekiwana wartość: 	Wyświetlenie błędu
+Wartość testowa: 	Ukazanie komunikatu o braku dostępnej pamięci.
 Status/Ocena testu: 	Sukces
 
-3.
-Cel testu: 	Logowanie z użyciem niepoprawnego kodu Pin
-Stan początkowy: 	Ekran podania kodu dostępu Pin
-Akcja: 	1. Podanie niepoprawnego kodu Pin
-Oczekiwana wartość: 	Wyświetlenie błędu
-Wartość testowa: 	Ukazanie komunikatu: „Kod dostępu jest nieprawidłowy, spróbuj ponownie”.
-Status/Ocena testu: 	Aplikacja zareagowała prawidłowo.
+6.
+Cel testu: 	Pobieranie aplikacji bez dostępnej wolnej pamięci masowej. - Przypadek negatywny
+Stan początkowy: 	Ekran szczegołówych informacji o aplikacji: „COMARCH OPASKA ŻYCIA” w sklep Play
+
+Akcja: 	1. Naciśnij przycisk "Zainstaluj"
+
+Oczekiwana wartość: 	Rozpoczęcia pobierania.
+Wartość testowa: 	Ukazanie komunikatu o braku dostępnej pamięci.
+Status/Ocena testu: 	Porażka
 
