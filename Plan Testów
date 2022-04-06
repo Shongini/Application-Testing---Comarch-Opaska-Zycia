@@ -4,8 +4,8 @@ Nazwa projektu: Testowanie aplikacji mobilnej: "COMARCH OPASKA ŻYCIA"
 	
 	I. WSTĘP
 	Projekt polega na przetestowaniu aplikacji mobilnej: "COMARCH OPASKA ŻYCIA" dostępnej dla użytkowników Android(Sklep Play) oraz iOS(AppStore).
-	Celem projektu jest zidentyfikowanie błędów mogących wpłynąć na decyzję potencjalnego klienta o dokonaniu zakupu w sklepie internetowym.
-	Materiały, które dostarczy testowanie przekazane zostaną deweloperow celem wprowadzenia poprawek. W drugiej kolejności przeprowadzone zostaną testy regresyjne. 
+	Celem projektu jest zidentyfikowanie błędów (podczas pobierania aplikacji, zakładania konta oraz logowania), które mogą spowodować błędy podczas korzystania przez docelowego klienta.
+	Informacje, które wynikną z etapu testowania zostaną przekazane do poprawek deweloperom. Jeśli zaistnieje konieczność, w kolejnym etapie zostaną przeprowadzone testy regresyjne.
 	
 	II. OPIS
 	
