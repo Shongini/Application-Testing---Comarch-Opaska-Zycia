@@ -3,7 +3,7 @@ Nazwa projektu: Testowanie aplikacji mobilnej: "COMARCH OPASKA ŻYCIA"
 	Wersja: 1.0
 	
 	I. WSTĘP
-	Projekt polega na przetestowaniu strony internetowej o adresie: http://automationpractice.com/index.php
+	Projekt polega na przetestowaniu aplikacji mobilnej: "COMARCH OPASKA ŻYCIA" dostępnej dla użytkowników Android(Sklep Play) oraz iOS(AppStore).
 	Celem projektu jest zidentyfikowanie błędów mogących wpłynąć na decyzję potencjalnego klienta o dokonaniu zakupu w sklepie internetowym.
 	Materiały, które dostarczy testowanie przekazane zostaną deweloperow celem wprowadzenia poprawek. W drugiej kolejności przeprowadzone zostaną testy regresyjne. 
 	
