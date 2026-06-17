@@ -1,39 +1,103 @@
-Scenariusz testowy (Logowanie) – Aplikacja „COMARCH OPASKA ŻYCIA”
-Firma: 				Comarch
-Nr dokumentu: 			1
-Nazwa projektu: 		Testowanie aplikacji fitness
-Zadanie: 			Przetestowanie aplikacji mobilnej: „COMARCH OPASKA ŻYCIA”
-Osoba wykonująca test: 	Dawid Chryc
+# Scenariusz Testowy: Logowanie do aplikacji „COMARCH OPASKA ŻYCIA”
 
-Testowane elementy: 		Logowanie do aplikacji na urządzeniu
-Opis: 	Przetestowanie aplikacji pod kątem możliwości zalogowania z użyciem odpowiednich danych.
-Wersja: 1.0
+## Metadane
+- **Projekt:** Testowanie aplikacji Fitness
+- **Wersja:** 1.2
+- **Autor:** Dawid Chryc
+- **Środowisko:** Android 12 / iOS 15
 
-1. 
-Cel testu: 	Logowanie z użyciem poprawnych danych
-Stan początkowy: 	Ekran logowania w aplikacji: „COMARCH OPASKA ŻYCIA”
-Akcja:	1. Podanie adresu e-mail
-	2. Podanie hasła
-	3. Podanie kodu Pin
-Oczekiwana wartość: 	Wyświetlenie okna menu aplikacji.
-Wartość testowa: 	Ukazanie okna menu.
-Status/Ocena testu:	Logowanie zakończone sukcesem.
+---
 
-2.
-Cel testu: 	Logowanie z użyciem niepoprawnego adresu e-mail i/lub hasła
-Stan początkowy: 	Ekran logowania w aplikacji: „COMARCH OPASKA ŻYCIA”
-Akcja:	1. Podanie niepoprawnego adresu e-mail i/lub niepoprawnego hasła
-Oczekiwana wartość: 	Wyświetlenie błędu.
-Wartość testowa: 	Ukazanie komunikatu: „E-mail lub hasło są nieprawidłowe”.
-Status/Ocena testu: 	Aplikacja zareagowała prawidłowo.
+## Szablon Przypadku Testowego
+- **ID:** [ID_SCENARIUSZA]
+- **Tytuł:** [Krótki opis celu]
+- **Typ:** [Pozytywny / Negatywny / Brzegowy]
+- **Priorytet:** [Wysoki / Średni / Niski]
+- **Warunki początkowe:** [Co musi być gotowe przed startem]
+- **Dane testowe:** [Co wpisać]
+- **Kroki:** 
+  1. [Krok 1]
+- **Oczekiwany rezultat:** [Co dokładnie ma się wydarzyć]
+- **Uwagi/Wskazówki:** [Dodatkowe techniczne informacje]
+- **Status/Raport błędów:** [Pass/Fail - jeśli Fail, dodaj link do zrzutu ekranu/logów]
 
+---
 
-3.
-Cel testu: 	Logowanie z użyciem niepoprawnego kodu Pin
-Stan początkowy: 	Ekran podania kodu dostępu Pin
-Akcja: 	1. Podanie niepoprawnego kodu Pin
-Oczekiwana wartość: 	Wyświetlenie błędu
-Wartość testowa: 	Ukazanie komunikatu: „Kod dostępu jest nieprawidłowy, spróbuj ponownie”.
-Status/Ocena testu: 	Aplikacja zareagowała prawidłowo.
+## 1. Przypadki Pozytywne (Sunny Day)
 
+### ID: LOG_POS_01
+- **Tytuł:** Poprawne logowanie użytkownika
+- **Typ:** Pozytywny
+- **Priorytet:** Wysoki
+- **Warunki początkowe:** Użytkownik posiada aktywne konto. Ekran logowania jest otwarty.
+- **Dane testowe:** E-mail: `user987@gmail.com`, Hasło: `user321`, PIN: `2580`
+- **Kroki:**
+  1. Podaj adres e-mail i hasło.
+  2. Naciśnij „Zaloguj się”.
+  3. Podaj kod PIN.
+  4. Naciśnij „OK”.
+- **Oczekiwany rezultat:** Użytkownik zostaje przekierowany do menu głównego aplikacji.
+- **Uwagi/Wskazówki:** Sprawdź szybkość przejścia między ekranem logowania a menu.
+- **Status/Raport błędów:** 
 
+---
+
+## 2. Przypadki Negatywne
+
+### ID: LOG_NEG_01
+- **Tytuł:** Logowanie z niepoprawnym hasłem
+- **Typ:** Negatywny
+- **Priorytet:** Wysoki
+- **Warunki początkowe:** Ekran logowania otwarty.
+- **Dane testowe:** E-mail: `user987@gmail.com`, Hasło: `zleHaslo123`
+- **Kroki:**
+  1. Podaj adres e-mail.
+  2. Podaj błędne hasło.
+  3. Naciśnij „Zaloguj się”.
+- **Oczekiwany rezultat:** System wyświetla komunikat: „E-mail lub hasło są nieprawidłowe”.
+- **Uwagi/Wskazówki:** Komunikat powinien być czytelny dla użytkownika.
+- **Status/Raport błędów:** 
+
+### ID: LOG_NEG_02
+- **Tytuł:** Logowanie z niepoprawnym kodem PIN
+- **Typ:** Negatywny
+- **Priorytet:** Wysoki
+- **Warunki początkowe:** Użytkownik wpisał poprawne dane logowania. Ekran podania PIN-u jest otwarty.
+- **Dane testowe:** PIN: `0000`
+- **Kroki:**
+  1. Podaj niepoprawny kod PIN.
+  2. Naciśnij „OK”.
+- **Oczekiwany rezultat:** System wyświetla komunikat: „Kod dostępu jest nieprawidłowy, spróbuj ponownie”.
+- **Uwagi/Wskazówki:** Sprawdź, czy PIN nie jest widoczny (maskowanie znaków).
+- **Status/Raport błędów:** 
+
+---
+
+## 3. Przypadki Brzegowe (Edge Cases)
+
+### ID: LOG_EDGE_01
+- **Tytuł:** Przerwanie logowania (przełączenie w tło)
+- **Typ:** Brzegowy
+- **Priorytet:** Średni
+- **Warunki początkowe:** Ekran logowania otwarty.
+- **Dane testowe:** E-mail: `user987@gmail.com`, Hasło: `user321`
+- **Kroki:**
+  1. Wprowadź poprawne dane.
+  2. Zminimalizuj aplikację (przejdź do ekranu głównego).
+  3. Przywróć aplikację.
+- **Oczekiwany rezultat:** Pola powinny pozostać wypełnione.
+- **Uwagi/Wskazówki:** Zwróć uwagę na zachowanie po przywróceniu aplikacji (czy nie następuje reset).
+- **Status/Raport błędów:** 
+
+### ID: LOG_EDGE_02
+- **Tytuł:** Wielokrotne kliknięcie przycisku „Zaloguj się”
+- **Typ:** Brzegowy
+- **Priorytet:** Niski
+- **Warunki początkowe:** Ekran logowania otwarty.
+- **Dane testowe:** Poprawne dane.
+- **Kroki:**
+  1. Wprowadź dane.
+  2. Szybko kliknij „Zaloguj się” kilkukrotnie.
+- **Oczekiwany rezultat:** Proces inicjowany tylko raz.
+- **Uwagi/Wskazówki:** Czy aplikacja blokuje przycisk po pierwszym kliknięciu?
+- **Status/Raport błędów:** 

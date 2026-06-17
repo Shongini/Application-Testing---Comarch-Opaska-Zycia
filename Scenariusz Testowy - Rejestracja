@@ -1,86 +1,113 @@
-Scenariusz testowy (Rejestracja) - Aplikacja "COMARCH OPASKA ŻYCIA"
-Firma:                             Comarch
-Nr dokumentu:                      1
-Nazwa projektu:                    Testowanie aplikacji Fitness
-Zadanie:                           Przetestowanie aplikacji mobilnej: "COMARCH OPASKA ŻYCIA"
-Osoba wykonująca test:             Dawid Chryc
+# Scenariusz Testowy: Rejestracja w aplikacji „COMARCH OPASKA ŻYCIA”
 
-Testowane elementy:                Rejestracja w aplikacji na urządzeniu
-Opis:                              Przetestowanie aplikacji pod kątem możliwości założenia konta.
-Wersja:                            1.0
+## Metadane
+- **Projekt:** Testowanie aplikacji Fitness
+- **Wersja:** 1.2
+- **Autor:** Dawid Chryc
+- **Środowisko:** Android 12 / iOS 15
 
+---
 
-1.
-Cel testu:                            Rejestracja z użyciem poprawnych danych - Przypadek pozytywny
-Stan początkowy:                      Ekran zakładania konta w aplikacji
-Akcja:                                
-                                      1.  Podaj imię, nazwisko i adres mailowy
-                                      2.  Naciśnij przycisk "Dalej"
-                                      3.  Ustal nowe hasło i potwierdź je
-                                      4.  Potwierdź regulamin
-                                      
-Oczekiwana wartość:                   Akceptacja wprowadzonych danych
-Wartość testu:                        Rejestracja zakończona pomyślnie
-Status/Ocena:                         Sukces
+## Szablon Przypadku Testowego
+- **ID:** [ID_SCENARIUSZA]
+- **Tytuł:** [Krótki opis celu]
+- **Typ:** [Pozytywny / Negatywny / Brzegowy]
+- **Priorytet:** [Wysoki / Średni / Niski]
+- **Warunki początkowe:** [Co musi być gotowe przed startem]
+- **Dane testowe:** [Co wpisać]
+- **Kroki:** 
+  1. [Krok 1]
+- **Oczekiwany rezultat:** [Co dokładnie ma się wydarzyć]
+- **Uwagi/Wskazówki:** [Dodatkowe techniczne informacje]
+- **Status/Raport błędów:** [Pass/Fail - jeśli Fail, dodaj link do zrzutu ekranu/logów]
 
-2.
-Cel testu:                            Rejestracja z użyciem poprawnych danych - Przypadek negatywny
-Stan początkowy:                      Ekran zakładania konta w aplikacji
-Akcja:                                
-                                      1.  Podaj imię, nazwisko i adres mailowy
-                                      2.  Naciśnij przycisk "Dalej"
-                                      3.  Ustal nowe hasło i potwierdź je
-                                      4.  Potwierdź regulamin
-                                      
-Oczekiwana wartość:                   Niezaakceptowanie wprowadzonych danych
-Wartość testu:                        Rejestracja zakończona pomyślnie
-Status/Ocena:                         Porażka
+---
 
+## 1. Przypadki Pozytywne (Sunny Day)
 
-3.
-Cel testu:                            Rejestracja z użyciem niepoprawnego adresu e-mail - Przypadek pozytywny
-Stan początkowy:                      Ekran zakładania konta w aplikacji
-Akcja:                                
-                                      1.  Podaj imię, nazwisko i adres mailowy
-                                      
-Oczekiwana wartość:                   Wystąpienie błędu
-Wartość testu:                        Wyświetlenie komunikatu: "Wpisz e-mail według schematu example@email.com"
-Status/Ocena:                         Sukces
+### ID: REJ_POS_01
+- **Tytuł:** Poprawna rejestracja nowego użytkownika
+- **Typ:** Pozytywny
+- **Priorytet:** Wysoki
+- **Warunki początkowe:** Ekran rejestracji otwarty.
+- **Dane testowe:** Imię: `User`, Nazwisko: `Resu`, E-mail: `unikalny@test.pl`, Hasło: `SilneHaslo123!`
+- **Kroki:**
+  1. Podaj poprawne dane.
+  2. Naciśnij „Dalej”.
+  3. Ustal silne hasło i potwierdź je.
+  4. Zaakceptuj regulamin.
+  5. Naciśnij przycisk rejestracji.
+- **Oczekiwany rezultat:** Konto utworzone, potwierdzenie sukcesu.
+- **Uwagi/Wskazówki:** Sprawdź czy po rejestracji aplikacja automatycznie loguje użytkownika.
+- **Status/Raport błędów:** 
 
-4.
-Cel testu:                            Rejestracja z użyciem niepoprawnego adresu e-mail - Przypadek negatywny
-Stan początkowy:                      Ekran zakładania konta w aplikacji
-Akcja:                                
-                                      1.  Podaj imię, nazwisko i adres mailowy
-                                      
-Oczekiwana wartość:                   Zaakceptowanie wprowadzonych danych
-Wartość testu:                        Wyświetlenie komunikatu: "Wpisz e-mail według schematu example@email.com"
-Status/Ocena:                         Porażka
+---
 
+## 2. Przypadki Negatywne
 
-5.
-Cel testu:                            Rejestracja z użyciem niepoprawnego hasła - Przypadek pozytywny
-Stan początkowy:                      Ekran zakładania konta w aplikacji
-Akcja:                                
-                                      1.  Podaj imię, nazwisko i adres mailowy
-                                      2.  Naciśnij przycisk "Dalej"
-                                      3.  Ustal nowe hasło i potwierdź je
-                                      
-Oczekiwana wartość:                   Brak akceptacji określonej formy hasła
-Wartość testu:                        Wyświetlenie komunikatu: "Hasło niespełnia wymagań" i/lub "Wprowadzone hasło róźni się od poprzedniego".
-Status/Ocena:                         Sukces
+### ID: REJ_NEG_01
+- **Tytuł:** Rejestracja z niepoprawnym formatem e-mail
+- **Typ:** Negatywny
+- **Priorytet:** Wysoki
+- **Warunki początkowe:** Ekran rejestracji otwarty.
+- **Dane testowe:** E-mail: `niepoprawny.format`
+- **Kroki:**
+  1. Podaj e-mail w błędnym formacie.
+  2. Naciśnij „Dalej”.
+- **Oczekiwany rezultat:** Komunikat: „Wpisz e-mail według schematu example@email.com”.
+- **Uwagi/Wskazówki:** Czy walidacja jest w czasie rzeczywistym?
+- **Status/Raport błędów:** 
 
+### ID: REJ_NEG_02
+- **Tytuł:** Rejestracja przy użyciu zajętego adresu e-mail
+- **Typ:** Negatywny
+- **Priorytet:** Wysoki
+- **Warunki początkowe:** Ekran rejestracji otwarty.
+- **Dane testowe:** E-mail: `istniejacy@test.pl`
+- **Kroki:**
+  1. Podaj zajęty e-mail.
+  2. Wypełnij pozostałe pola i spróbuj się zarejestrować.
+- **Oczekiwany rezultat:** Komunikat: „Użytkownik z tym adresem e-mail już istnieje”.
+- **Uwagi/Wskazówki:** Czy system oferuje odzyskiwanie hasła?
+- **Status/Raport błędów:** 
 
-6.
-Cel testu:                            Rejestracja z użyciem niepoprawnego hasła - Przypadek negatywny
-Stan początkowy:                      Ekran zakładania konta w aplikacji
-Akcja:                                
-                                      1.  Podaj imię, nazwisko i adres mailowy
-                                      2.  Naciśnij przycisk "Dalej"
-                                      3.  Ustal nowe hasło i potwierdź je
-                                      
-Oczekiwana wartość:                   Zaakceptowanie formy hasła
-Wartość testu:                        Wyświetlenie komunikatu: "Hasło niespełnia wymagań" i/lub "Wprowadzone hasło róźni się od poprzedniego".
-Status/Ocena:                         Porażka
+### ID: REJ_NEG_03
+- **Tytuł:** Rejestracja z niedopasowanymi hasłami
+- **Typ:** Negatywny
+- **Priorytet:** Wysoki
+- **Warunki początkowe:** Ekran rejestracji otwarty.
+- **Dane testowe:** Hasło: `Haslo1`, Potwierdzenie: `Haslo2`
+- **Kroki:**
+  1. Wpisz dwa różne hasła.
+- **Oczekiwany rezultat:** Komunikat: „Wprowadzone hasła różnią się”.
+- **Uwagi/Wskazówki:** Sprawdź czy przycisk „Dalej” jest aktywny.
+- **Status/Raport błędów:** 
 
+---
 
+## 3. Przypadki Brzegowe (Edge Cases)
+
+### ID: REJ_EDGE_01
+- **Tytuł:** Rejestracja z pustym regulaminem
+- **Typ:** Brzegowy
+- **Priorytet:** Średni
+- **Warunki początkowe:** Wszystkie dane wypełnione poprawnie.
+- **Dane testowe:** Brak
+- **Kroki:**
+  1. Nie zaznaczaj zgody na regulamin.
+  2. Naciśnij przycisk rejestracji.
+- **Oczekiwany rezultat:** Rejestracja zablokowana, komunikat o konieczności akceptacji.
+- **Uwagi/Wskazówki:** Czy komunikat jest czytelny?
+- **Status/Raport błędów:** 
+
+### ID: REJ_EDGE_02
+- **Tytuł:** Użycie bardzo długich danych wejściowych
+- **Typ:** Brzegowy
+- **Priorytet:** Niski
+- **Warunki początkowe:** Ekran rejestracji otwarty.
+- **Dane testowe:** Imię: `BardzoDlugieImie....(255+ znaków)`
+- **Kroki:**
+  1. Wpisz bardzo długie imię/nazwisko.
+- **Oczekiwany rezultat:** System przycina tekst lub obsługuje bez crashu.
+- **Uwagi/Wskazówki:** Sprawdź responsywność interfejsu (czy UI się rozjeżdża).
+- **Status/Raport błędów:** 

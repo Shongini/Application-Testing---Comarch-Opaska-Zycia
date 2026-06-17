@@ -1,74 +1,84 @@
-Scenariusz testowy (Logowanie) – Aplikacja „COMARCH OPASKA ŻYCIA”
-Firma: 				Comarch
-Nr dokumentu: 			1
-Nazwa projektu: 		Testowanie aplikacji fitness
-Zadanie: 			Przetestowanie aplikacji mobilnej: „COMARCH OPASKA ŻYCIA”
-Osoba wykonująca test: 		Dawid Chryc
+# Scenariusz Testowy: Pobieranie aplikacji „COMARCH OPASKA ŻYCIA”
 
-Testowane elementy: 		Pobieranie aplikacji ze sklepu Play
-Opis: 				Test możliwości pobrania i zainstalowania aplikacji na urządzeniu korzystając ze sklepu Play.
-Wersja: 			1.0
+## Metadane
+- **Projekt:** Testowanie aplikacji Fitness
+- **Wersja:** 1.2
+- **Autor:** Dawid Chryc
+- **Środowisko:** Android 12 / iOS 15
 
-1. 
-Cel testu: 		Pobranie aplikacji z dostępem do internetu. - Przypadek pozytywny
-Stan początkowy: 	Ekran szczegołówych informacji o aplikacji: „COMARCH OPASKA ŻYCIA” w sklep Play
+---
 
-Akcja:			1. Naciśnij przycisk "Zainstaluj"
+## Szablon Przypadku Testowego
+- **ID:** [ID_SCENARIUSZA]
+- **Tytuł:** [Krótki opis celu]
+- **Typ:** [Pozytywny / Negatywny / Brzegowy]
+- **Priorytet:** [Wysoki / Średni / Niski]
+- **Warunki początkowe:** [Co musi być gotowe przed startem]
+- **Dane testowe:** [Co wpisać/wybrać]
+- **Kroki:** 
+  1. [Krok 1]
+- **Oczekiwany rezultat:** [Co dokładnie ma się wydarzyć]
+- **Uwagi/Wskazówki:** [Dodatkowe techniczne informacje]
+- **Status/Raport błędów:** [Pass/Fail - jeśli Fail, dodaj link do zrzutu ekranu/logów]
 
-Oczekiwana wartość: 	Instalacja aplikacji na urządzeniu.
-Wartość testowa: 	Weryfikacja i rozpoczęcie pobierania.
-Status/Ocena testu:	Sukces
+---
 
-2. 
-Cel testu: 		Pobranie aplikacji z dostępem do internetu. - Przypadek negatywny
-Stan początkowy: 	Ekran szczegołówych informacji o aplikacji: „COMARCH OPASKA ŻYCIA” w sklep Play
+## 1. Przypadki Pozytywne (Sunny Day)
 
-Akcja:			1. Naciśnij przycisk "Zainstaluj"
+### ID: POB_POS_01
+- **Tytuł:** Poprawne pobranie aplikacji
+- **Typ:** Pozytywny
+- **Priorytet:** Wysoki
+- **Warunki początkowe:** Urządzenie ma połączenie z internetem, wystarczającą ilość pamięci i jest zalogowane do sklepu (Google Play / App Store).
+- **Dane testowe:** Brak (wyszukiwanie po nazwie)
+- **Kroki:**
+  1. Wyszukaj aplikację „COMARCH OPASKA ŻYCIA”.
+  2. Naciśnij przycisk „Zainstaluj”.
+- **Oczekiwany rezultat:** Aplikacja zostaje poprawnie pobrana i zainstalowana.
+- **Uwagi/Wskazówki:** Sprawdź czas pobierania przy dobrym WiFi.
+- **Status/Raport błędów:** 
 
-Oczekiwana wartość: 	Brak rozpoczęcia pobierania.
-Wartość testowa: 	Weryfikacja i rozpoczęcie pobierania.
-Status/Ocena testu:	Porażka
+---
 
+## 2. Przypadki Negatywne
 
-3.
-Cel testu: 		Pobieranie aplikacji bez dostępu do internetu. - Przypadek pozytywny
-Stan początkowy: 	Ekran szczegołówych informacji o aplikacji: „COMARCH OPASKA ŻYCIA” w sklep Play
+### ID: POB_NEG_01
+- **Tytuł:** Próba pobrania bez dostępu do Internetu
+- **Typ:** Negatywny
+- **Priorytet:** Wysoki
+- **Warunki początkowe:** Urządzenie nie ma dostępu do sieci.
+- **Dane testowe:** Brak
+- **Kroki:**
+  1. Wyszukaj aplikację.
+  2. Naciśnij przycisk „Zainstaluj”.
+- **Oczekiwany rezultat:** System wyświetla komunikat o braku połączenia.
+- **Uwagi/Wskazówki:** Czy system sklepu informuje o potrzebie sieci?
+- **Status/Raport błędów:** 
 
-Akcja:			1. Naciśnij przycisk "Zainstaluj"
+### ID: POB_NEG_02
+- **Tytuł:** Próba pobrania przy braku pamięci
+- **Typ:** Negatywny
+- **Priorytet:** Średni
+- **Warunki początkowe:** Urządzenie ma zapełnioną pamięć masową.
+- **Dane testowe:** Brak
+- **Kroki:**
+  1. Naciśnij przycisk „Zainstaluj”.
+- **Oczekiwany rezultat:** System wyświetla komunikat o braku dostępnej pamięci.
+- **Uwagi/Wskazówki:** Sprawdź czy system sugeruje usunięcie nieużywanych aplikacji.
+- **Status/Raport błędów:** 
 
-Oczekiwana wartość: 	Brak rozpoczęcia pobierania.
-Wartość testowa: 	Wyświetlenie komunikatu o braku dostępu do internetu.
-Status/Ocena testu: 	Sukces
+---
 
+## 3. Przypadki Brzegowe (Edge Cases)
 
-4.
-Cel testu: 		Pobieranie aplikacji bez dostępu do internetu. - Przypadek negatywny
-Stan początkowy: 	Ekran szczegołówych informacji o aplikacji: „COMARCH OPASKA ŻYCIA” w sklep Play
-
-Akcja:			1. Naciśnij przycisk "Zainstaluj"
-
-Oczekiwana wartość: 	Weryfikacja poprawna i rozpoczęcie pobierania aplikacji.
-Wartość testowa: 	Wyświetlenie komunikatu o braku dostępu do internetu.
-Status/Ocena testu: 	Porażka
-
-
-5.
-Cel testu: 	Pobieranie aplikacji bez dostępnej wolnej pamięci masowej. - Przypadek pozytywny
-Stan początkowy: 	Ekran szczegołówych informacji o aplikacji: „COMARCH OPASKA ŻYCIA” w sklep Play
-
-Akcja: 	1. Naciśnij przycisk "Zainstaluj"
-
-Oczekiwana wartość: 	Wyświetlenie błędu
-Wartość testowa: 	Ukazanie komunikatu o braku dostępnej pamięci.
-Status/Ocena testu: 	Sukces
-
-6.
-Cel testu: 	Pobieranie aplikacji bez dostępnej wolnej pamięci masowej. - Przypadek negatywny
-Stan początkowy: 	Ekran szczegołówych informacji o aplikacji: „COMARCH OPASKA ŻYCIA” w sklep Play
-
-Akcja: 	1. Naciśnij przycisk "Zainstaluj"
-
-Oczekiwana wartość: 	Rozpoczęcia pobierania.
-Wartość testowa: 	Ukazanie komunikatu o braku dostępnej pamięci.
-Status/Ocena testu: 	Porażka
-
+### ID: POB_EDGE_01
+- **Tytuł:** Przerwanie pobierania (utrata sieci)
+- **Typ:** Brzegowy
+- **Priorytet:** Średni
+- **Warunki początkowe:** Rozpoczęto pobieranie aplikacji.
+- **Dane testowe:** Brak
+- **Kroki:**
+  1. W trakcie pobierania wyłącz połączenie z internetem.
+- **Oczekiwany rezultat:** Pobieranie wstrzymane/zatrzymane, komunikat błędu sieci.
+- **Uwagi/Wskazówki:** Sprawdź, czy po przywróceniu sieci pobieranie można wznowić.
+- **Status/Raport błędów:** 

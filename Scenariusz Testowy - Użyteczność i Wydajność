@@ -1,0 +1,153 @@
+# Scenariusz Testowy: Użyteczność, Wydajność i Specyfika Mobilna
+## Aplikacja: „COMARCH OPASKA ŻYCIA”
+
+## Metadane
+- **Projekt:** Testowanie aplikacji Fitness
+- **Wersja:** 1.2
+- **Autor:** Dawid Chryc
+- **Środowisko:** Android 12 / iOS 15
+
+---
+
+## Szablon Przypadku Testowego
+- **ID:** [ID_SCENARIUSZA]
+- **Tytuł:** [Krótki opis celu]
+- **Typ:** [Pozytywny / Negatywny / Brzegowy]
+- **Priorytet:** [Wysoki / Średni / Niski]
+- **Warunki początkowe:** [Co musi być gotowe przed startem]
+- **Dane testowe:** [Co wpisać/wybrać]
+- **Kroki:** 
+  1. [Krok 1]
+- **Oczekiwany rezultat:** [Co dokładnie ma się wydarzyć]
+- **Uwagi/Wskazówki:** [Dodatkowe techniczne informacje]
+- **Status/Raport błędów:** [Pass/Fail - jeśli Fail, dodaj link do zrzutu ekranu/logów]
+
+---
+
+## 1. Wydajność i Responsywność
+
+### ID: PERF_01
+- **Tytuł:** Responsywność przy słabym połączeniu sieciowym (Edge/3G)
+- **Typ:** Brzegowy
+- **Priorytet:** Średni
+- **Warunki początkowe:** Użytkownik zalogowany, na ekranie głównym.
+- **Dane testowe:** Brak
+- **Kroki:**
+  1. Ogranicz prędkość sieci na urządzeniu.
+  2. Wykonaj akcję wymagającą pobrania danych.
+- **Oczekiwany rezultat:** Aplikacja działa stabilnie, wyświetla wskaźnik ładowania, nie zawiesza się.
+- **Uwagi/Wskazówki:** Zmierz czas ładowania.
+- **Status/Raport błędów:** 
+
+---
+
+## 2. Użyteczność (UX)
+
+### ID: UX_01
+- **Tytuł:** Zmiana orientacji ekranu
+- **Typ:** Brzegowy
+- **Priorytet:** Średni
+- **Warunki początkowe:** Ekran logowania/rejestracji otwarty.
+- **Dane testowe:** Wpisane częściowe dane.
+- **Kroki:**
+  1. Zmień orientację urządzenia (pion/poziom).
+- **Oczekiwany rezultat:** Layout poprawnie się skaluje, dane zachowane.
+- **Uwagi/Wskazówki:** Czy elementy nie nakładają się?
+- **Status/Raport błędów:** 
+
+### ID: UX_02
+- **Tytuł:** Obsługa przycisku „Wstecz” systemu
+- **Typ:** Negatywny
+- **Priorytet:** Średni
+- **Warunki początkowe:** Ekran rejestracji.
+- **Dane testowe:** Brak
+- **Kroki:**
+  1. Naciśnij fizyczny/systemowy przycisk „Wstecz”.
+- **Oczekiwany rezultat:** Powrót do poprzedniego kroku lub potwierdzenie wyjścia.
+- **Uwagi/Wskazówki:** Upewnij się, że użytkownik nie jest "uwięziony".
+- **Status/Raport błędów:** 
+
+---
+
+## 3. Zarządzanie Sesją i Bezpieczeństwo
+
+### ID: SEC_01
+- **Tytuł:** Wygasanie sesji (uśpienie urządzenia)
+- **Typ:** Brzegowy
+- **Priorytet:** Wysoki
+- **Warunki początkowe:** Użytkownik zalogowany, aplikacja w tle.
+- **Dane testowe:** Brak
+- **Kroki:**
+  1. Zablokuj urządzenie na 30 minut.
+  2. Przywróć aplikację.
+- **Oczekiwany rezultat:** Wymóg ponownego uwierzytelnienia (np. PIN).
+- **Uwagi/Wskazówki:** Sprawdź czas po którym następuje automatyczne wylogowanie.
+- **Status/Raport błędów:** 
+
+---
+
+## 4. Funkcjonalności Specyficzne
+
+### ID: FUN_01
+- **Tytuł:** Obsługa braku uprawnień (Lokalizacja/Bluetooth)
+- **Typ:** Negatywny
+- **Priorytet:** Wysoki
+- **Warunki początkowe:** Aplikacja po czystej instalacji.
+- **Dane testowe:** Brak
+- **Kroki:**
+  1. Odrzuć żądanie dostępu do uprawnień.
+- **Oczekiwany rezultat:** Wyjaśnienie potrzeby uprawnień i przekierowanie do ustawień.
+- **Uwagi/Wskazówki:** Czy wyjaśnienie jest zrozumiałe dla nietechnicznego użytkownika?
+- **Status/Raport błędów:** 
+
+---
+
+## 5. Odporność i Synchronizacja
+
+### ID: INT_01
+- **Tytuł:** Przychodzące połączenie w trakcie synchronizacji
+- **Typ:** Brzegowy
+- **Priorytet:** Średni
+- **Warunki początkowe:** Synchronizacja w toku.
+- **Dane testowe:** Brak
+- **Kroki:**
+  1. Odbierz połączenie.
+- **Oczekiwany rezultat:** Synchronizacja wstrzymana/wznawiana.
+- **Uwagi/Wskazówki:** Czy dane są bezpieczne?
+- **Status/Raport błędów:** 
+
+### ID: BT_01
+- **Tytuł:** Nagłe rozłączenie Bluetooth podczas synchronizacji
+- **Typ:** Negatywny
+- **Priorytet:** Wysoki
+- **Warunki początkowe:** Synchronizacja w toku.
+- **Dane testowe:** Brak
+- **Kroki:**
+  1. Wyłącz Bluetooth.
+- **Oczekiwany rezultat:** Informacja o utracie połączenia, brak uszkodzenia danych.
+- **Uwagi/Wskazówki:** Czy aplikacja próbuje automatycznie połączyć ponownie?
+- **Status/Raport błędów:** 
+
+### ID: RES_01
+- **Tytuł:** Nagłe zamknięcie aplikacji (System Kill)
+- **Typ:** Brzegowy
+- **Priorytet:** Wysoki
+- **Warunki początkowe:** Aplikacja działa.
+- **Dane testowe:** Brak
+- **Kroki:**
+  1. Wymuś zamknięcie aplikacji.
+- **Oczekiwany rezultat:** Po ponownym uruchomieniu poprawny stan, spójna baza.
+- **Uwagi/Wskazówki:** Sprawdź czy nie ma danych "w zawieszeniu".
+- **Status/Raport błędów:** 
+
+### ID: BAT_01
+- **Tytuł:** Praca przy niskim stanie baterii
+- **Typ:** Brzegowy
+- **Priorytet:** Niski
+- **Warunki początkowe:** Bateria < 15%.
+- **Dane testowe:** Brak
+- **Kroki:**
+  1. Przeprowadź synchronizację.
+- **Oczekiwany rezultat:** Aplikacja działa, nie powoduje nagłych wyłączeń.
+- **Uwagi/Wskazówki:** Czy system zamyka aplikację?
+- **Status/Raport błędów:** 
